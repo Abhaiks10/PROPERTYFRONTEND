@@ -1,0 +1,1 @@
+export const serverURL =  "https://property-managementb.onrender.com"
