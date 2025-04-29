@@ -1,8 +1,8 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import {  Routes, Route } from 'react-router-dom';
 import About from './pages/About';
+import Auth from './pages/Auth'
 import Header from './components/Header';
 import Admin from './admin/Admin'
-import Auth from './pages/auth';
 import Dashboard from './admin/Dashboard';
 import Property from './pages/Property';
 import Home from './pages/Home';
@@ -16,7 +16,7 @@ export default function App() {
         <Route path='/' element={<Home />} />
         <Route path='/property' element={<Property />} />
         <Route path='/admin' element={<Admin/>} />
-         <Route path='/login' element={<Auth />} />
+         <Route path='/login' element={<Auth/>} />
         <Route path='/register' element={<Auth register={true} /> } />
         <Route path='/dashboard' element={< Dashboard/>} />
         <Route path='/about' element={<About />} />
